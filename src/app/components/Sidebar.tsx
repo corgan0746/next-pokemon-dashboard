@@ -30,7 +30,7 @@ export const Sidebar = () => {
 
     <div id="menu" 
       // style={{ width: '400px' }}
-      className="  fixed top-0 bg-gray-900 min-h-screen z-10 text-slate-300 w-56 left-0 h-screen overflow-y-scroll">
+      className="fixed top-0 bg-gray-900 min-h-screen z-10 text-slate-300 w-56 left-0 h-screen overflow-y-scroll-auto">
 
 
       <div id="logo" className="my-4 px-6">
