@@ -8,12 +8,14 @@ const pokemonsGallery = async (): Promise<PokemonResult> =>    {
     return result;
 }
 
+
+
 export default async function PokemonsSection() {
 
     const pokemons = await pokemonsGallery();
   return (
     <>
-      { pokemons.results.map((poke) => <PokemonCard url={poke.url} /> ) }
+      { pokemons.results.map((poke, i) => <PokemonCard key={i+1} url={poke.url} /> ) }
     </>
   );
 }
